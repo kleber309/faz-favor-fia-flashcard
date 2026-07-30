@@ -1,10 +1,14 @@
-{
+*{
   margin: 0;
   padding: 0;
 }
 
 .cabecalho{
     padding: 15px 25px;
+    displey: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 255, 157);
 }
 
 .cartao{
@@ -14,4 +18,20 @@
 
 .carto-imagem, .cartao-verso{
     width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+}
+
+main{
+    flex:1;
+}
+.cabecalho-link {
+    color: rgba(29, 141, 252, 0.815);
+}
+h1{
+    color:rgb(0, 255, 170)
 }
