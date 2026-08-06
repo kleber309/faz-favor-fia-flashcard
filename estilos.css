@@ -5,7 +5,7 @@
 
 .cabecalho{
     padding: 15px 25px;
-    displey: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(0, 255, 157);
@@ -33,5 +33,35 @@ main{
     color: rgba(29, 141, 252, 0.815);
 }
 h1{
-    color:rgb(0, 255, 170)
+    color: aquamarine;
+    font-size: 18px;
+}
+
+footer{
+
+  background-color: rgb(98, 238, 191);
+  padding: 15px  25px;
+color: rgb(27, 243, 171);
+}
+
+
+
+.cartao-interno{
+   position: relative;
+   transition: transforme 0.8s;
+
+}
+
+.cartao:hover .cartao-interno{
+    transform: rotateY(180deg);
+}
+.cartao-frente, .cartao-verso{
+    position: absolute; 
+    border-radius:  12px;
+ box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  backface-visibility: hidden;
+}
+
+.cartao-verso{
+    transform: votatey(180deg);
 }
